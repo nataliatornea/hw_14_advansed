@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Advances Carousel</title>
+    <style>
+        body {
+        background-color: #333;
+        }
+        .carousel {
+            width: 800px;
+            height: 700px;
+            border: 5px solid #555;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .carousel .slides {
+            background-color: #444;
+            height: 600px;
+            width: 2415px;
+            transition: 1s;
+        }
+        .carousel>.controls {
+            background-color: black;
+            height: 100px;
+            text-align: center;
+        }
+        .carousel>.controls img {
+            height: 100px;
+        }
+        #s2:target .slides {
+            margin-left: -805px;
+        }
+        #s3:target .slides {
+            margin-left: -1610px;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        
+        <div id="s1">
+            <div id="s2">
+                <div id="s3">
+                    <div class="slides">
+                         <img src="https://cdn2.tropicalsky.co.uk/images/800x600/relaxing-scandinave-spa-whistler-chad-chomlack.jpg" alt="">
+                         <img src="https://media-cdn.tripadvisor.com/media/vr-splice-j/01/09/7d/82.jpg" alt="">
+                         <img src="https://thumbs.dreamstime.com/b/relax-park-nature-evening-travel-pond-water-background-family-happy-tree-sky-cool-beauty-beautiful-river-vintage-152990566.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <a href="#s1"><img src="https://cdn2.tropicalsky.co.uk/images/800x600/relaxing-scandinave-spa-whistler-chad-chomlack.jpg" alt=""></a>
+            <a href="#s2"><img src="https://media-cdn.tripadvisor.com/media/vr-splice-j/01/09/7d/82.jpg" alt=""></a>
+            <a href="#s3"><img src="https://thumbs.dreamstime.com/b/relax-park-nature-evening-travel-pond-water-background-family-happy-tree-sky-cool-beauty-beautiful-river-vintage-152990566.jpg" alt=""></a>
+      
+        </div>
+    </div>
+    
+</body>
+</html>
